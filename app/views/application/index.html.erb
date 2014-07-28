@@ -1,0 +1,15 @@
+<h1> Bookmarks</h1>
+<% @links.each do |link| %>
+<ul>
+  <li>
+    <a href= <%= "#{link.url}" %>> <%= "#{link.name}" %> </a>
+    <br>
+    <a href=<%= "http://gitbox-131549.use1.nitrousbox.com/link/#{link.id}/edit" %> >Edit</a>
+
+
+   </li>
+</ul>
+<% end %>
+<p>
+<a href="http://gitbox-131549.use1.nitrousbox.com/new_link" class="new">New Bookmark</a>
+</p>
